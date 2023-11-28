@@ -1,0 +1,101 @@
+/* assets/styles/app.css */
+
+@import "~bootstrap/scss/bootstrap";
+
+.navbar {
+    background-color: #F17A0C; /* Orange background color */
+}
+
+.navbar-brand {
+    font-family: 'Holtwood One SC', serif;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-size: 18px; /* Adjust as per design */
+    font-family: 'Martel Sans', sans-serif; /* Assuming Martel Sans is imported */
+    font-weight: 700;
+}
+
+.navbar-dark .navbar-nav .dropdown-menu {
+    background-color: #404040; /* Dark gray background for dropdowns */
+}
+
+.navbar-dark .navbar-nav .dropdown-menu .dropdown-item {
+    color: white;
+    font-size: 16px; /* Adjust as per design */
+    font-weight: 700;
+}
+
+.navbar-dark .navbar-nav .dropdown-menu .dropdown-item:hover,
+.navbar-dark .navbar-nav .dropdown-menu .dropdown-item:focus {
+    background-color: #333333; /* Darker gray for hover/focus */
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1); /* Toggler icon border */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Responsive adjustments if necessary */
+@media (max-width: 991px) {
+    .navbar-expand-lg .navbar-collapse {
+        background-color: #F17A0C;
+    }
+}
+.nav-link, .navbar-text {
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 700; /* As specified for Martel Sans */
+}
+
+/* You might also want to specify the font-size if it differs from the default */
+.nav-link {
+    font-size: 16px; /* Adjust to your preference */
+}
+
+/* Ensure Martel Sans is used for dropdown items as well */
+.dropdown-item {
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 700; /* Maintain font weight consistency */
+}
+/* assets/styles/app.css */
+
+/* ... other styles ... */
+
+/* Styles for the dropdown menus */
+.navbar-dark .navbar-nav .nav-link.dropdown-toggle {
+    background-color: #404040; /* Background color for the dropdown toggles */
+}
+
+/* Styles for the dropdown items */
+.navbar-dark .navbar-nav .dropdown-menu {
+    background-color: #404040; /* Background color for the dropdown menus */
+}
+/* assets/styles/app.css */
+
+/* ... other styles ... */
+
+/* Center navbar items */
+.navbar-nav {
+    justify-content: center;
+    flex-grow: 1;
+}
+
+/* Spacing between the dropdowns */
+.nav-item.dropdown {
+    margin-left: 1rem; /* or use any other spacing that suits your design */
+    margin-right: 1rem;
+}
+
+/* This ensures that the dropdowns are also centered within their flex container */
+@media (min-width: 992px) { /* Adjusting for Bootstrap's large breakpoint */
+    .navbar-expand-lg .navbar-nav {
+        justify-content: center;
+    }
+}
