@@ -11,6 +11,7 @@
     color: white;
     font-size: 30px;
     font-weight: 400;
+    vertical-align: middle;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -98,4 +99,9 @@
     .navbar-expand-lg .navbar-nav {
         justify-content: center;
     }
+}
+.navbar-logo {
+    height: 60px; /* or your preferred size */
+    width: auto; /* maintain aspect ratio */
+    margin-right: 0.5rem; /* adjust the spacing between the logo and the text */
 }
