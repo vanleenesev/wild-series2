@@ -46,6 +46,16 @@ class ProgramFixtures extends Fixture implements DependentFixtureInterface
         $program->setCategory($this->getReference('category_Science Fiction'));
         $manager->persist($program);
         $manager->flush();
+
+        $program = new Program();
+        $program->setTitle('Arcane');
+        $program->setSynopsis('Synopsis de Arcane...');
+        $program->setCategory($this->getReference('category_Animation'));
+        //... set other program's properties
+        $manager->persist($program);
+        $this->addReference('program_Arcane', $program);
+        $manager->flush();
+
     }
 
     public function getDependencies(): array
