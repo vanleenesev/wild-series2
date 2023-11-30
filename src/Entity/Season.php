@@ -21,6 +21,9 @@ class Season
     #[ORM\Column(type: 'text')]
     private string $description;
 
+    #[ORM\Column(type: 'integer')]
+    private int $year;
+
     #[ORM\ManyToOne(targetEntity: Program::class, inversedBy: 'seasons')]
     #[ORM\JoinColumn(nullable: false)]
     private ?Program $program = null;
@@ -60,6 +63,18 @@ class Season
     public function setDescription(string $description): self
     {
         $this->description = $description;
+
+        return $this;
+    }
+
+    public function getYear(): int
+    {  
+        return $this->year;
+    }
+
+    public function setYear(int $year): self
+    {
+        $this->year = $year;
 
         return $this;
     }
