@@ -44,3 +44,4 @@ class SeasonFixtures extends Fixture implements DependentFixtureInterface
         ];
     }
 }
+

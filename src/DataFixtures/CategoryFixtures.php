@@ -34,3 +34,4 @@ class CategoryFixtures extends Fixture
         $manager->flush();
     }
 }
+        

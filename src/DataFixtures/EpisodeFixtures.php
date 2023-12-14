@@ -38,4 +38,3 @@ class EpisodeFixtures extends Fixture implements DependentFixtureInterface
         ];
     }
 }
-
